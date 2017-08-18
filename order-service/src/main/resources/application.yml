@@ -1,0 +1,15 @@
+info:
+  version: "@project.version@"
+spring:
+  application:
+    name: "@project.artifactId@"
+  boot:
+    admin:
+      client:
+        enabled: true
+        prefer-ip: true
+server:
+  port: 8088
+management:
+  security:
+    enabled: false
