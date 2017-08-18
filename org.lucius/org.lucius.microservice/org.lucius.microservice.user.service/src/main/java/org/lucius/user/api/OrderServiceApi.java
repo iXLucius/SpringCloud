@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name = "order-service",fallback = OrderServiceBreaker.class)
+@FeignClient(name = "org-lucius-microservice-order-service",fallback = OrderServiceBreaker.class)
 public interface OrderServiceApi {
 	
 	@RequestMapping(value = "/orders", method = RequestMethod.GET)

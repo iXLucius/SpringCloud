@@ -1,4 +1,9 @@
 spring:
+  boot:
+    admin:
+      client:
+        enabled: true
+        prefer-ip: true
   cloud:
     consul:
       host: 192.168.26.131
@@ -24,5 +29,14 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   profiles:
     active:
-    - test          ##使用测试配置，Consul中节点为：/config/user-service,test/configuration
+    - test          ##使用测试配置，Consul中节点为：/config/org.lucius.microservice.user.service,test/configuration
                     ##Consul中全局配置：/config/application/configuration | config/application,dev/configuration 
+hystrix:
+  metrics:
+    enabled: true
+feign:
+  hystrix:
+    enabled: true   ##需要开启此配置，不然不生效
+management:
+  security:
+    enabled: false   

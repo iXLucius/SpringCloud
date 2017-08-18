@@ -12,6 +12,7 @@
 	</parent>
 	
 	<modules>
-		<module>service-monitor</module>
+		<module>org.lucius.commons.service.monitor</module>
+		<module>org.lucius.commons.utils</module>
 	</modules>
 </project>

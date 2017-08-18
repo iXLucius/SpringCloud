@@ -11,7 +11,7 @@
 	</parent>
 
 	<modules>
-		<module>order-service</module>
-		<module>user-service</module>
+		<module>org.lucius.microservice.order.service</module>
+		<module>org.lucius.microservice.user.service</module>
 	</modules>
 </project>
