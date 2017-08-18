@@ -6,7 +6,7 @@
 
 节点：config/org.lucius.microservice.order.service,test/configuration
 
-配置：
+配置（格式YAML）：
 
 lucius:
   email: lucius.lv.test@qq.com
