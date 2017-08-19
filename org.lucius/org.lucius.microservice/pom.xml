@@ -14,6 +14,7 @@
 		<module>org.lucius.microservice.order</module>
 		<module>org.lucius.microservice.user</module>
 		<module>org.lucius.microservice.api.gateway</module>
+		<module>org.lucius.microservice.api.authentication</module>
 	</modules>
 
 	<build>

@@ -31,6 +31,7 @@
 		<geoip2-version>2.9.0</geoip2-version>
 		<ant-version>1.10.1</ant-version>
 		<jackson-msgpack-version>0.8.13</jackson-msgpack-version>
+		<jjwt-version>0.7.0</jjwt-version>
 	</properties>
 
 	<dependencyManagement>
@@ -109,6 +110,11 @@
 				<groupId>org.msgpack</groupId>
 				<artifactId>jackson-dataformat-msgpack</artifactId>
 				<version>${jackson-msgpack-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.jsonwebtoken</groupId>
+				<artifactId>jjwt</artifactId>
+				<version>${jjwt-version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
