@@ -11,7 +11,17 @@
 	</parent>
 
 	<modules>
-		<module>org.lucius.microservice.order.service</module>
-		<module>org.lucius.microservice.user.service</module>
+		<module>org.lucius.microservice.order</module>
+		<module>org.lucius.microservice.user</module>
 	</modules>
+
+	<build>
+		<!-- 未被pluginManagement包裹表示子项目应用该构建规则 -->
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

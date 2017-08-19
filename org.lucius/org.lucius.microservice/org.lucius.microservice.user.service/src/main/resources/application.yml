@@ -1,7 +1,0 @@
-info:
-  version: "@project.version@"
-server:
-  port: 8082
-spring:
-  application:
-    name: "@project.artifactId@"

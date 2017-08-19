@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>org.lucius.commons.service.monitor</artifactId>
-	
+
 	<parent>
 		<groupId>org.lucius</groupId>
 		<artifactId>org.lucius.commons</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>de.codecentric</groupId>
@@ -23,34 +23,34 @@
 			<artifactId>spring-boot-admin-server-ui-login</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>de.codecentric</groupId>
-		    <artifactId>spring-boot-admin-server-ui-hystrix</artifactId>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server-ui-hystrix</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>de.codecentric</groupId>
-		    <artifactId>spring-boot-admin-server-ui-turbine</artifactId>
-		    <exclusions>
-		    	<exclusion>
-		    		<groupId>org.bouncycastle</groupId>
-		    		<artifactId>bcpkix-jdk15on</artifactId>
-		    	</exclusion>
-		    </exclusions>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server-ui-turbine</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.bouncycastle</groupId>
+					<artifactId>bcpkix-jdk15on</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-turbine</artifactId>
-        </dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-turbine</artifactId>
+		</dependency>
 		<dependency>
-		      <groupId>org.springframework.cloud</groupId>
-		      <artifactId>spring-cloud-starter-turbine</artifactId>
-		      <exclusions>
-		      	<exclusion>
-		      		<groupId>org.springframework.cloud</groupId>
-		      		<artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-turbine</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>
 		      			spring-cloud-starter-eureka
 		      		</artifactId>
-		      	</exclusion>
-		      </exclusions>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -71,4 +71,12 @@
 			<artifactId>jolokia-core</artifactId>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>
