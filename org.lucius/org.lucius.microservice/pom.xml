@@ -13,6 +13,7 @@
 	<modules>
 		<module>org.lucius.microservice.order</module>
 		<module>org.lucius.microservice.user</module>
+		<module>org.lucius.microservice.api.gateway</module>
 	</modules>
 
 	<build>

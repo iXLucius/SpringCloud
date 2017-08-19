@@ -1,0 +1,14 @@
+info:
+  version: "@project.version@"
+spring:
+  application:
+    name: "@project.artifactId@"
+server:
+  port: 9000
+
+zuul:
+  routes:
+    shops:
+      path: /api-user/**
+      serviceId: org-lucius-microservice-user
+      stripPrefix: true
