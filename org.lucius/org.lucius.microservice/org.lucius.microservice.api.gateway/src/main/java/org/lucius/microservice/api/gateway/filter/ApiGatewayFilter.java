@@ -1,6 +1,7 @@
 package org.lucius.microservice.api.gateway.filter;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
 import org.lucius.commons.utils.JsonUtils;
@@ -32,8 +33,10 @@ public class ApiGatewayFilter extends ZuulFilter{
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
+        HttpServletResponse response = ctx.getResponse();
         String token = request.getHeader("Api-Token");
         if(StringUtils.isBlank(token)) {
+        	response.setContentType("application/json;charset=utf-8");
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
             try {
