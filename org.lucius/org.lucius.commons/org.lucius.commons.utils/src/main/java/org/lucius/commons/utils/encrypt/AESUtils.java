@@ -49,16 +49,4 @@ public class AESUtils {
 		}
 	}
 
-	public static void main(String[] args) {
-
-		String encryptKey = "xxxxxxxxxxxxxxuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyy";
-		String content = "xxxeeeeeeeeeeeccccdyyyyffffffyyyyyyyyyyggggyyyy";
-
-		String e = encrypt(content, encryptKey);
-		System.out.println("加密后的密文是:" + e);
-
-		System.out.println("解密后的明文是:" + decrypt(e, encryptKey));
-
-	}
-
 }
