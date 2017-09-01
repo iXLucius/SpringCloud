@@ -22,11 +22,11 @@ public class Result<T> implements Serializable {
 
     public Result() {
     }
-
+    
     public Result(T data) {
     	this.data = data;
     }
-    
+
     public Result(String statusCode, String message) {
         this(statusCode, message, null);
     }

@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(value = ServiceException.class)
     public void serviceException(HttpServletRequest request,HttpServletResponse response, Exception e) throws Exception {
-		toJson(new Result<Exception>((ServiceException)e),response);
+		toJson(new Result<Object>((ServiceException)e),response);
 	}
 	
 	@ExceptionHandler(value = Throwable.class)

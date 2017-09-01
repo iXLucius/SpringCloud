@@ -41,9 +41,17 @@ public class UserController {
 	}
 	
 	@GetMapping("/user/test")
-	@ApiOperation(value = "测试", notes = "测试")
+	@ApiOperation(value = "测试ServiceException", notes = "测试ServiceException")
 	public Result<Boolean> test(){
 		throw new ServiceException("ORDER-01001010","测试错误");
+	}
+	
+	@GetMapping("/user/null")
+	@ApiOperation(value = "测试NullPointerException", notes = "测试NullPointerException")
+	public String testThrowable(){
+		Order o = null;
+		//模拟空指针异常
+		return o.toString();
 	}
 
 }
