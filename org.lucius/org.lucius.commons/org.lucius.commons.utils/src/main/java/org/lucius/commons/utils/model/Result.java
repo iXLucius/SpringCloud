@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.commons.lang3.StringUtils;
+import org.lucius.commons.utils.exception.ServiceException;
 
 @XmlRootElement
 public class Result<T> implements Serializable {
@@ -22,8 +23,16 @@ public class Result<T> implements Serializable {
     public Result() {
     }
 
+    public Result(T data) {
+    	this.data = data;
+    }
+    
     public Result(String statusCode, String message) {
         this(statusCode, message, null);
+    }
+    
+    public Result(ServiceException e) {
+    	this(e.getStatusCode(),e.getMessage());
     }
 
     public Result(String resultCode, String resultMsg, T data) {

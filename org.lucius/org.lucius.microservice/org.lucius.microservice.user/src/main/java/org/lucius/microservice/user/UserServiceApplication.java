@@ -1,5 +1,6 @@
 package org.lucius.microservice.user;
 
+import org.lucius.commons.utils.exception.GlobalExceptionHandler;
 import org.lucius.commons.utils.swagger.SwaggerMVCConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +13,7 @@ import org.springframework.context.annotation.Import;
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableHystrix
-@Import({SwaggerMVCConfiguration.class })
+@Import({SwaggerMVCConfiguration.class,GlobalExceptionHandler.class })
 public class UserServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UserServiceApplication.class, args);

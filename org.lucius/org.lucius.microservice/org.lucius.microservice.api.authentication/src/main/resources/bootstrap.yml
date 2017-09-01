@@ -1,0 +1,36 @@
+spring:
+  boot:
+    admin:
+      client:
+        enabled: true
+        prefer-ip: true
+  cloud:
+    consul:
+      host: 192.168.26.131
+      port: 8500
+      enabled: true
+      retry:
+        max-attempts: 10
+        max-interval: 2000
+      discovery:
+        enabled: true
+        health-check-interval: 10s
+        tags:
+        - dev
+      config:
+        enabled: true
+        format: YAML
+        data-key: configuration
+  datasource:
+    name: micro-order
+    url: jdbc:mysql://192.168.26.132:3306/micro-order
+    username: root
+    password: Lucius-123456
+    driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+    active:
+    - test          ##使用测试配置，Consul中节点为：/config/order-service,test/configuration
+                    ##Consul中全局配置：/config/application/configuration | config/application,dev/configuration 
+management:
+  security:
+    enabled: false

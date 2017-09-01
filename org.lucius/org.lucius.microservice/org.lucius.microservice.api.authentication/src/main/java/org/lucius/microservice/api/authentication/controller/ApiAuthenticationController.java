@@ -61,7 +61,7 @@ public class ApiAuthenticationController {
 		return null;
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		String keyId = UUID.randomUUID().toString();
 		String encryptKey = UUID.randomUUID().toString();
 		
@@ -89,6 +89,6 @@ public class ApiAuthenticationController {
         System.out.println(claims);
         String string = claims.get("info", String.class);
         System.out.println(AESUtils.decrypt(string, encryptKey));
-	}
+	}*/
 
 }
