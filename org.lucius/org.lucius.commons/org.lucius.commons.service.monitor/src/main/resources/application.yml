@@ -13,6 +13,7 @@ spring:
         #tags: management.context-path=/foo, health.path=/ping
         health-check-interval: 10s
         health-check-timeout: 1s
+        health-check-url: http://lucius:123456@DESKTOP-LH00R9B:8080/health
 #management.context-path: /foo
 #endpoints.health.path: /ping
   boot:
