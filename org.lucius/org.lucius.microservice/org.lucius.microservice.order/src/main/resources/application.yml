@@ -3,5 +3,7 @@ info:
 spring:
   application:
     name: "@project.artifactId@"
+  zipkin:
+    base-url: 'http://DESKTOP-LH00R9B:10999/'
 server:
-  port: 8089
+  port: 8050

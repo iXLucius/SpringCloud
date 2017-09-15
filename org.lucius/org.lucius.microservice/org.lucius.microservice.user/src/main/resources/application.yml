@@ -1,7 +1,9 @@
 info:
   version: "@project.version@"
 server:
-  port: 8081
+  port: 8051
 spring:
   application:
     name: "@project.artifactId@"
+  zipkin:
+    base-url: 'http://DESKTOP-LH00R9B:10999/'
