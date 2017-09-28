@@ -7,6 +7,8 @@ jhipster
 .class
 demo1
 spring-cloud-rest-tcc-master
+spring-boot-flyway-demo
+spring-framework
 
 # Eclipse
 .classpath

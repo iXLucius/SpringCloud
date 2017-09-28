@@ -13,6 +13,7 @@ spring:
         max-attempts: 10
         max-interval: 2000
       discovery:
+        prefer-ip-address: true
         enabled: true
         health-check-interval: 10s
         tags:

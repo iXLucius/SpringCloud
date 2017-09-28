@@ -17,6 +17,7 @@ spring:
         health-check-interval: 10s
         tags:
         - dev
+        prefer-ip-address: true
       config:
         enabled: true
         format: YAML

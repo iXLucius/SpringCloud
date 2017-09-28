@@ -6,4 +6,8 @@ spring:
   application:
     name: "@project.artifactId@"
   zipkin:
-    base-url: 'http://DESKTOP-LH00R9B:9411/'
+    locator:
+      discovery:
+        enabled: true
+    enabled: true
+    #base-url: 'http://org-lucius-commons-service-tracker:9411/'
