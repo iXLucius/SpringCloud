@@ -15,5 +15,6 @@
 		<module>org.lucius.commons.service.monitor</module>
 		<module>org.lucius.commons.utils</module>
 		<module>org.lucius.commons.service.tracker</module>
+		<module>org.lucius.commons.trans</module>
 	</modules>
 </project>

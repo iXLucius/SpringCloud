@@ -11,10 +11,14 @@
 	</parent>
 
 	<modules>
-		<module>org.lucius.microservice.order</module>
-		<module>org.lucius.microservice.user</module>
 		<module>org.lucius.microservice.api.gateway</module>
 		<module>org.lucius.microservice.api.authentication</module>
+		<module>org.lucius.microservice.user</module>
+		<module>org.lucius.microservice.order</module>
+		<module>org.lucius.microservice.product</module>
+		<module>org.lucius.microservice.coupon</module>
+		<module>org.lucius.microservice.stock</module>
+		<module>org.lucius.microservice.points</module>	
 	</modules>
 
 	<build>

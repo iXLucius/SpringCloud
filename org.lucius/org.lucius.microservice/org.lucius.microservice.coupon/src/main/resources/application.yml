@@ -1,0 +1,13 @@
+info:
+  version: "@project.version@"
+spring:
+  application:
+    name: "@project.artifactId@"
+  zipkin:
+    locator:
+      discovery:
+        enabled: true
+    enabled: true
+    ##base-url: 'http://org-lucius-commons-service-tracker:9411/'
+server:
+  port: 8089
